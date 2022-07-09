@@ -1,0 +1,264 @@
+ //font
+ $base-font: Inter;
+
+ //line height
+ $base-line-height: 90px;
+
+ //letter spacing
+ $base-letter-spacing: -0.02em;
+
+ //size
+ $xxl: 72px;
+ $xl: 60px;
+ $lg: 48px;
+ $md: 36px;
+ $sm: 30px;
+ $xs: 24px;
+ $text-xl: 20px;
+ $text-lg: 18px;
+ $text-md: 16px;
+ $text-sm: 14px;
+ $text-xs: 12px;
+
+ //weight
+ $regular: 400;
+ $medium: 500;
+ $semibold: 600;
+ $bold: 700;
+
+ //Define heading
+
+ //h1
+ %base-h1-regular {
+   font-family: $base-font;
+   font-weight: $regular;
+   font-size: $xxl;
+   line-height: $base-line-height;
+   letter-spacing: $base-letter-spacing;
+   color: $gray-900;
+ }
+
+ %base-h1-medium {
+   @extend %base-h1-regular;
+   font-weight: $medium;
+ }
+
+ %base-h1-semibold {
+   @extend %base-h1-regular;
+   font-weight: $semibold;
+ }
+
+ %base-h1-bold {
+   @extend %base-h1-regular;
+   font-weight: $bold;
+ }
+
+ //h2
+ %base-h2-regular {
+   @extend %base-h1-regular;
+   font-size: $xl;
+ }
+
+ %base-h2-medium {
+   @extend %base-h2-regular;
+   font-weight: $medium;
+ }
+
+ %base-h2-semibold {
+   @extend %base-h2-regular;
+   font-weight: $semibold;
+ }
+
+ %base-h2-bold {
+   @extend %base-h2-regular;
+   font-weight: $bold;
+ }
+
+ //h3
+ %base-h3-regular {
+   @extend %base-h1-regular;
+   font-size: $lg;
+ }
+
+ %base-h3-medium {
+   @extend %base-h3-regular;
+   font-weight: $medium;
+ }
+
+ %base-h3-semibold {
+   @extend %base-h3-regular;
+   font-weight: $semibold;
+ }
+
+ %base-h3-bold {
+   @extend %base-h3-regular;
+   font-weight: $bold;
+ }
+
+ //h4
+ %base-h4-regular {
+   @extend %base-h1-regular;
+   font-size: $md;
+ }
+
+ %base-h4-medium {
+   @extend %base-h4-regular;
+   font-weight: $medium;
+ }
+
+ %base-h4-semibold {
+   @extend %base-h4-regular;
+   font-weight: $semibold;
+ }
+
+ %base-h4-bold {
+   @extend %base-h4-regular;
+   font-weight: $bold;
+ }
+
+ //h5
+ %base-h5-regular {
+   @extend %base-h1-regular;
+   font-size: $sm;
+ }
+
+ %base-h5-medium {
+   @extend %base-h5-regular;
+   font-weight: $medium;
+ }
+
+ %base-h5-semibold {
+   @extend %base-h5-regular;
+   font-weight: $semibold;
+ }
+
+ %base-h5-bold {
+   @extend %base-h5-regular;
+   font-weight: $bold;
+ }
+
+ //h6
+ %base-h6-regular {
+   @extend %base-h1-regular;
+   font-size: $xs;
+ }
+
+ %base-h6-medium {
+   @extend %base-h6-regular;
+   font-weight: $medium;
+ }
+
+ %base-h6-semibold {
+   @extend %base-h6-regular;
+   font-weight: $semibold;
+ }
+
+ %base-h6-bold {
+   @extend %base-h6-regular;
+   font-weight: $bold;
+ }
+
+ //p1
+ %base-p1-regular {
+   @extend %base-h1-regular;
+   font-size: $text-xl;
+ }
+
+ %base-p1-medium {
+   @extend %base-p1-regular;
+   font-weight: $medium;
+ }
+
+ %base-p1-semibold {
+   @extend %base-p1-regular;
+   font-weight: $semibold;
+ }
+
+ %base-p1-bold {
+   @extend %base-p1-regular;
+   font-weight: $bold;
+ }
+
+ //p2
+ %base-p2-regular {
+   @extend %base-h1-regular;
+   font-size: $text-lg;
+ }
+
+ %base-p2-medium {
+   @extend %base-p2-regular;
+   font-weight: $medium;
+ }
+
+ %base-p2-semibold {
+   @extend %base-p2-regular;
+   font-weight: $semibold;
+ }
+
+ %base-p2-bold {
+   @extend %base-p2-regular;
+   font-weight: $bold;
+ }
+
+ //p3
+ %base-p3-regular {
+   @extend %base-h1-regular;
+   font-size: $text-md;
+ }
+
+ %base-p3-medium {
+   @extend %base-p3-regular;
+   font-weight: $medium;
+ }
+
+ %base-p3-semibold {
+   @extend %base-p3-regular;
+   font-weight: $semibold;
+ }
+
+ %base-p3-bold {
+   @extend %base-p3-regular;
+   font-weight: $bold;
+ }
+
+ //p4
+ %base-p4-regular {
+   @extend %base-h1-regular;
+   font-size: $text-sm;
+ }
+
+ %base-p4-medium {
+   @extend %base-p4-regular;
+   font-weight: $medium;
+ }
+
+ %base-p4-semibold {
+   @extend %base-p4-regular;
+   font-weight: $semibold;
+ }
+
+ %base-p4-bold {
+   @extend %base-p4-regular;
+   font-weight: $bold;
+ }
+
+ //p5
+ %base-p5-regular {
+   @extend %base-h1-regular;
+   font-size: $text-xs;
+ }
+
+ %base-p5-medium {
+   @extend %base-p5-regular;
+   font-weight: $medium;
+ }
+
+ %base-p5-semibold {
+   @extend %base-p5-regular;
+   font-weight: $semibold;
+ }
+
+ %base-p5-bold {
+   @extend %base-p5-regular;
+   font-weight: $bold;
+ }
