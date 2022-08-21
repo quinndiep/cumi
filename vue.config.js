@@ -1,4 +1,5 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require('@vue/cli-service');
 module.exports = defineConfig({
-  transpileDependencies: true
-})
+    transpileDependencies: true,
+    resolve: { alias: { vue: 'vue/dist/vue.esm-bundler.js' } },
+});
