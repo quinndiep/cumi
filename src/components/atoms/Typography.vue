@@ -1,5 +1,5 @@
 <template>
-    <p style="{mappedVariant(variant)}">{{ text }}</p>
+    <p :class="mappedVariant">{{ text }}</p>
 </template>
 
 <script>
@@ -17,13 +17,14 @@ export default {
             default: 'base-h1-regular',
         },
     },
+    data() {},
+    mounted() {},
     computed: {
-        mappedVariant(variant) {
+        mappedVariant() {
             return Object.values(TypographyTypes).find(item => {
-                if (item === variant) {
-                    return `@extend %${variant}`;
+                if (item === this.variant) {
+                    return this.variant;
                 }
-                return `@extend %${TypographyTypes.HEADING_1_REGULAR}`;
             });
         },
     },

@@ -26,4 +26,11 @@ module.exports = {
         });
         return config;
     },
+    css: {
+        loaderOptions: {
+            scss: {
+                additionalData: `@import "~@/assets/app.scss";`
+            }
+        }
+    }
 };
