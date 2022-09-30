@@ -1,9 +1,15 @@
 <template>
-    <p :class="mappedVariant">{{ text }}</p>
+    <p
+        :class="mappedVariant"
+        :style="styleObject"
+    >
+        {{ text }}
+    </p>
 </template>
 
 <script>
 import { TypographyTypes } from '@/helper/constant.typography';
+import { COLORS } from '@/helper/constant.color';
 
 export default {
     name: 'TypographyComponent',
@@ -16,9 +22,11 @@ export default {
             type: String,
             default: 'base-h1-regular',
         },
+        color: {
+            type: String,
+            default: 'gray_900',
+        },
     },
-    data() {},
-    mounted() {},
     computed: {
         mappedVariant() {
             return Object.values(TypographyTypes).find(item => {
@@ -26,6 +34,9 @@ export default {
                     return this.variant;
                 }
             });
+        },
+        styleObject() {
+            return { color: COLORS[this.color] };
         },
     },
 };
