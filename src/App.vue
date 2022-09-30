@@ -1,19 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TypographyComponent
+        variant="base-h2-regular"
+        text="Hello"
+    />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TypographyComponent from '@/components/atoms/Typography';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    name: 'App',
+    components: {
+        TypographyComponent,
+    },
+};
 </script>
 
-<style lang=scss>
-@import "./assets/app.scss";
+<style lang="scss">
+@import './assets/app.scss';
 </style>
