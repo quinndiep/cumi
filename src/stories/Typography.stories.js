@@ -385,14 +385,6 @@ const Template = args => ({
     template: '<TypographyComponent v-bind="args"/>',
 });
 
-const H1Template = args => ({
-    components: { TypographyComponent },
-    setup() {
-        return { args };
-    },
-    template: '<TypographyComponent v-bind="args"/>',
-});
-
 export const Heading_1_Regular = Template.bind({});
 Heading_1_Regular.args = {
     variant: 'base-h1-regular',
