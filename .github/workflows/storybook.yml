@@ -2,7 +2,7 @@ name: Storybook
 on:
   push:
     branches:
-      - main # if any push happens on branch `main`, run this workflow. You could also add `paths` to detect changes in specific folder
+      - cumi
 
 jobs:
   build-and-deploy:
@@ -19,5 +19,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
-          branch: cumi
+          branch: gh-pages
           folder: storybook-static
