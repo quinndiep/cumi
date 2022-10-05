@@ -2,7 +2,7 @@ name: Storybook
 on:
   push:
     branches:
-      - cumi
+      - gh-pages
 
 jobs:
   build-and-deploy:
