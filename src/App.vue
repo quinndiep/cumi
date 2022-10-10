@@ -1,7 +1,7 @@
 <template>
     <TypographyComponent
         variant="base-h2-regular"
-        text="Hello"
+        text="Helloo"
     />
 </template>
 
