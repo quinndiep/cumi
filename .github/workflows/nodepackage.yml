@@ -24,8 +24,8 @@ jobs:
 
       - name: Update npm package version
         run: |
-          git config --global user.name "${{ env.USERNAME }}"
-          git config --global user.email "${{ env.USER_EMAIL }}"
+          git config --global user.name "${{ env.secrets.USERNAME }}"
+          git config --global user.email "${{ env.secrets.USER_EMAIL }}"
           npm version minor
 
       - name: Publish npm package version
