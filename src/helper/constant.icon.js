@@ -13,4 +13,12 @@ export const ICON_STROKE_WIDTH = {
 
 export const ICON_NAME = {
     BELL_PLUS: 'BellPlus',
+    ALERT_CIRCLE: 'AlertCircle',
+    ALERT_HEXAGON: 'AlertHexagon',
+    ALERT_OCTAGON: 'AlertOctagon',
+    ALERT_SQUARE: 'AlertSquare',
+    ALERT_TRIANGLE: 'AlertTriangle',
+    ANNOUNCEMENT_ICON_01: 'AnnouncementIcon01',
+    ANNOUNCEMENT_ICON_02: 'AnnouncementIcon02',
+    ANNOUNCEMENT_ICON_03: 'AnnouncementIcon03',
 };
