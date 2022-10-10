@@ -23,13 +23,9 @@ jobs:
           npm run build-storybook
 
       - name: Update npm package version
-        shell: bash
-        env:
-          USERNAME: ${{secrets.USERNAME}}
-          USER_EMAIL: ${{secrets.USER_EMAIL}}
         run: |
-          git config --global user.name "$USERNAME"
-          git config --global user.email "$USER_EMAIL"
+          git config --global user.name "${{ env.USERNAME }}"
+          git config --global user.email "${{ env.USER_EMAIL }}"
           npm version minor
 
       - name: Publish npm package version
