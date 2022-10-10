@@ -11,7 +11,7 @@ import { defineAsyncComponent } from 'vue';
 import IconMixin from '@/mixins/IconMixin';
 
 const requireContext = require.context(
-    '@/components/atoms/icons', //path to components folder which are resolved automatically
+    `@/components/atoms/icons`, //path to components folder which are resolved automatically
     true,
     /\.vue$/i,
     'sync'
@@ -19,13 +19,14 @@ const requireContext = require.context(
 
 let componentNames = requireContext
     .keys()
-    .map(file => file.replace(/(^.\/)|(\.vue$)/g, ''));
+    .map(file => file.replace(/(^[^_]*.\/)|(\.vue$)/g, ''));
+let componentPaths = requireContext.keys().map(file => file.replace('.', ''));
 
 let components = {};
 
-componentNames.forEach(component => {
+componentNames.forEach((component, index) => {
     components[component] = defineAsyncComponent(() =>
-        import('@/components/atoms/icons/' + component + '.vue')
+        import('@/components/atoms/icons' + componentPaths[index])
     );
 });
 
